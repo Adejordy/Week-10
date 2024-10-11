@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <!-- class for the container to organize and to call on later -->
   <body class="container">
@@ -15,7 +16,7 @@
     <div>
       <h1 id="return-header">Return Page</h1>
     </div>
-    <!-- create card to hold context-->
+    <!-- create card to hold context;with in the body of the card I created rows and in those row I created colmns for the informations needed with input set up for text -->
     <div class="card">
       <div class="card-body">
         <div class="row">
@@ -32,29 +33,28 @@
             </div>
           </div>
           <div class="col-sm">
-            <div class="form-control">
+            <div class="form-group">
               <label for="return-reason">Reason For Return</label>
               <input type="text" class="form-control" id="new-return-reason" />
-              <!-- I dont know why there is a box only around my reason for return, I've tried placing it in different parts of the div and it just changes the layout of the webpage -->
             </div>
           </div>
         </div>
       </div>
       <div>
-        <button id="submit" class="btn btn-primary form-control">
+        <button id="submit" class="btn btn-light form-control">
           Submit Return
         </button>
+        <!-- I created a submit button to enter the information -->
       </div>
     </div>
-    <table id="list" class="table table-hover table-light"></table>
-    <!-- table with rows
-     item being returned
-     item size
-     text box with reason for return
-     submit button -->
-
+    <table id="list" class="table table-hover table-light">
+      <tr>
+        <th>Item Name</th>
+        <th>Item Size</th>
+        <th>Reason For Return</th>
+      </tr>
+    </table>
     <script src="script.js"></script>
-    <script src="styles.css"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
