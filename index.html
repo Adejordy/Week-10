@@ -22,20 +22,39 @@
           <div class="col-sm">
             <div class="form-group">
               <label for="item-name">Item Name</label>
-              <input type="text" class="form-control" id="" />
+              <input type="text" class="form-control" id="new-item-name" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="item-size">Size</label>
+              <input type="text" class="form-control" id="new-size" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-control">
+              <label for="return-reason">Reason For Return</label>
+              <input type="text" class="form-control" id="new-return-reason" />
+              <!-- I dont know why there is a box only around my reason for return, I've tried placing it in different parts of the div and it just changes the layout of the webpage -->
             </div>
           </div>
         </div>
       </div>
+      <div>
+        <button id="submit" class="btn btn-primary form-control">
+          Submit Return
+        </button>
+      </div>
     </div>
+    <table id="list" class="table table-hover table-light"></table>
     <!-- table with rows
      item being returned
      item size
-     item color
      text box with reason for return
      submit button -->
 
     <script src="script.js"></script>
+    <script src="styles.css"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
