@@ -23,19 +23,23 @@
           <div class="col-sm">
             <div class="form-group">
               <label for="item-name">Item Name</label>
-              <input type="text" class="form-control" id="new-item-name" />
+              <input type="item" class="form-control" id="new-item-name" />
             </div>
           </div>
           <div class="col-sm">
             <div class="form-group">
               <label for="item-size">Size</label>
-              <input type="text" class="form-control" id="new-size" />
+              <input type="size" class="form-control" id="new-size" />
             </div>
           </div>
           <div class="col-sm">
             <div class="form-group">
               <label for="return-reason">Reason For Return</label>
-              <input type="text" class="form-control" id="new-return-reason" />
+              <input
+                type="reason"
+                class="form-control"
+                id="new-return-reason"
+              />
             </div>
           </div>
         </div>
@@ -54,6 +58,7 @@
         <th>Reason For Return</th>
       </tr>
     </table>
+    <div id="returns"></div>
     <script src="script.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
